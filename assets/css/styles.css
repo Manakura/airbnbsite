@@ -55,7 +55,7 @@
 	background-color: none;
 	font-size: 48px;
 	text-shadow: 1px 1px 5px black;
-	padding-left: 26vw;
+	padding: 0 auto;
 }
 
 @media screen and (max-width: 580px) {

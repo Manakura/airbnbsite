@@ -23,13 +23,19 @@
 	margin-left: auto !important;
 }
 
-#top-bg {
+.top-bg {
 	background-image: url('../img/top-bg.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: black;
-	height: 500px;
+	height: 100vh;
 	width: auto;
+}
+
+@media screen and (max-width: 580px) {
+	.top-bg {
+		height: 50vh;
+	}
 }
 
 #white-text-nav {

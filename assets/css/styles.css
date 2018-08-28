@@ -229,6 +229,12 @@ p {
 	}
 }
 
+@media screen and (max-width: 580px) {
+	.col-md-4 p#boldtext {
+		padding: 20px;
+	}
+}
+
 /* End of First Section */
 
 @media (max-width: 767px) {

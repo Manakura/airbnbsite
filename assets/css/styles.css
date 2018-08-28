@@ -44,6 +44,7 @@ body {
 @media screen and (max-width: 580px) {
 	.top-bg {
 		height: 50vh;
+		background-size: cover;
 	}
 }
 
@@ -86,7 +87,7 @@ body {
 	margin-right: auto;
 	text-align: center;
 	font-weight: bold;
-	top: 30%
+	top: 50%
 }
 
 @media screen and (max-width: 580px) {
@@ -110,7 +111,7 @@ body {
 	margin-right: auto;
 	text-align: center;
 	font-weight: bold;
-	top: 30%
+	top: 50%
 }
 
 .button-div {
@@ -224,6 +225,13 @@ p {
 	padding-bottom: 30px;
 }
 
+@media screen and (max-width: 580px) {
+	.features-clean {
+		background-size: cover;
+		background-position: right;
+	}
+}
+
 .features-clean .item .icon {
 	font-size: 40px;
 	color: white !important;
@@ -281,6 +289,21 @@ p {
 	bottom: 40%;
 	text-shadow: 1px 1px 5px black;
 	top: 30%;
+}
+
+@media screen and (max-width: 580px) {
+	.testimonial-style .testimonial-caption-style {
+		font-size: 15px;
+		top: 10%;
+	}
+}
+
+.testimonial-style .testimonial-caption-style p.quotes::before {
+	content: open-quote;
+}
+
+.testimonial-style .testimonial-caption-style p::after {
+	content: close-quote;
 }
 
 .testimonial-style .testimonial-authors {
@@ -358,6 +381,12 @@ p {
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 50vh;
+}
+
+@media screen and (max-width: 580px) {
+	#color-bg {
+		background-size: cover;
+	}
 }
 
 .divider {

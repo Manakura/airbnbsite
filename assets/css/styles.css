@@ -206,6 +206,15 @@ p {
 	color: grey;
 }
 
+.platforms {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 3rem auto 0;
+	text-align: center;
+	padding-bottom: 40px;
+}
+
 /* End of First Section */
 
 @media (max-width: 767px) {

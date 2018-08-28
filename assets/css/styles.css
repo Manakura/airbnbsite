@@ -210,9 +210,23 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin: 3rem auto 0;
+	margin: 3rem auto 50px;
 	text-align: center;
 	padding-bottom: 40px;
+}
+
+@media screen and (max-width: 580px) {
+	.platforms {
+		display: block;
+		line-height: 20px;
+		box-sizing: border-box;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	.platforms div {
+		padding: 20px;
+	}
 }
 
 /* End of First Section */

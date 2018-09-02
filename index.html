@@ -30,60 +30,60 @@
                 var $nav = $(".navbar-fixed-top");
                 $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
             });
-                window.fbAsyncInit = function () {
-                    FB.init({
-                        appId: 'your-app-id',
-                        autoLogAppEvents: true,
-                        xfbml: true,
-                        version: 'v3.1'
-                    });
-                };
-                $(function () {
-                    var header = $(".transparant");
-
-                    $(window).scroll(function () {
-                        var scroll = $(window).scrollTop();
-                        if (scroll >= 50) {
-                            header.addClass("scroll");
-                        } else {
-                            header.removeClass("scroll");
-                        }
-                    });
-
+            window.fbAsyncInit = function () {
+                FB.init({
+                    appId: 'your-app-id',
+                    autoLogAppEvents: true,
+                    xfbml: true,
+                    version: 'v3.1'
                 });
-                (function (d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0];
-                    if (d.getElementById(id)) {
-                        return;
+            };
+            $(function () {
+                var header = $(".transparant");
+
+                $(window).scroll(function () {
+                    var scroll = $(window).scrollTop();
+                    if (scroll >= 50) {
+                        header.addClass("scroll");
+                    } else {
+                        header.removeClass("scroll");
                     }
-                    js = d.createElement(s);
-                    js.id = id;
-                    js.src = "https://connect.facebook.net/en_US/sdk.js";
-                    fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));
-                $(document).ready(function () {
-                    $('.customer-logos').slick({
-                        slidesToShow: 4,
-                        slidesToScroll: 1,
-                        autoplay: true,
-                        autoplaySpeed: 1500,
-                        arrows: false,
-                        dots: false,
-                        pauseOnHover: false,
-                        responsive: [{
-                            breakpoint: 768,
-                            settings: {
-                                slidesToShow: 4
-                            }
-                        }, {
-                            breakpoint: 520,
-                            settings: {
-                                slidesToShow: 3
-                            }
-                        }]
-                    });
+                });
+
+            });
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) {
+                    return;
+                }
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "https://connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+            $(document).ready(function () {
+                $('.customer-logos').slick({
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 1500,
+                    arrows: false,
+                    dots: false,
+                    pauseOnHover: false,
+                    responsive: [{
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 4
+                        }
+                    }, {
+                        breakpoint: 520,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    }]
                 });
             });
+        });
     </script>
 </head>
 
@@ -123,8 +123,11 @@
     <div class="top-bg" style="position:relative;">
         <img class="centerlogo" src="assets/img/bnbcaresbetter.svg" data-aos="fade-down" data-aos-duration="900"
             data-aos-delay="100" data-aos-once="true" data-aos-easing="ease-in-out">
+        <p id="top-banner-text-1" data-aos="fade-down" data-aos-duration="900" data-aos-delay="400" data-aos-delay="100"
+            data-aos-once="true" data-aos-easing="ease-in-out">BnBCares - <strong>Your One Stop for Everything
+                Management.</strong><br>Sign up to our newsletter below to get the latest info!</p>
         <form class="newsletter" id="newsletter" action="https://airbnbcares.us19.list-manage.com/subscribe/post"
-            method="POST" autocomplete="off" data-aos="fade-down" data-aos-duration="900" data-aos-delay="400"
+            method="POST" autocomplete="off" data-aos="fade-down" data-aos-duration="900" data-aos-delay="700"
             data-aos-once="true" data-aos-easing="ease-in-out">
             <input type="hidden" name="u" value="88baf6d86f9a8faebb5c5ec99">
             <input type="hidden" name="id" value="774141a683">

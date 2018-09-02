@@ -21,17 +21,13 @@
     <script src="assets/jscript/bs-animation.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha384-FzT3vTVGXqf7wRfy8k4BiyzvbNfeYjK+frTVqZeNDFl8woCbF0CYG6g2fMEFFo/i"
+        crossorigin="anonymous"></script>
     <script type="text/javascript">
         $(function () {
             $(document).scroll(function () {
                 var $nav = $(".navbar-fixed-top");
                 $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-            });
-            $("button").click(function () {
-                $('html,body').animate({
-                        scrollTop: $(".div-2-under-top-1").offset().top
-                    },
-                    'slow')
             });
             $('.count').each(function () {
                 $(this).prop('Counter', 0).animate({
@@ -43,6 +39,25 @@
                         $(this).text(Math.ceil(now));
                     }
                 });
+                window.fbAsyncInit = function () {
+                    FB.init({
+                        appId: 'your-app-id',
+                        autoLogAppEvents: true,
+                        xfbml: true,
+                        version: 'v3.1'
+                    });
+                };
+
+                (function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) {
+                        return;
+                    }
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = "https://connect.facebook.net/en_US/sdk.js";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
                 $(document).ready(function () {
                     $('.customer-logos').slick({
                         slidesToShow: 4,
@@ -71,9 +86,35 @@
 </head>
 
 <body>
+    <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="490937888046716"
+  theme_color="#44bec7"
+  logged_in_greeting="Hi! Thanks for using AirBNB cares, send us a message and we will get back ASAP!"
+  logged_out_greeting="Hi! Thanks for using AirBNB cares, send us a message and we will get back ASAP!">
+</div>
     <div class="top-bg" style="position:relative;">
         <p class="text-uppercase-1" data-aos="fade-down" data-aos-duration="900" data-aos-delay="100" data-aos-once="true"
             data-aos-easing="ease-in-out" id="top-banner-text-1" style="font-family:Karla, sans-serif;">AIRBNB CARES</p>
+        <form class="newsletter" id="newsletter" action="https://airbnbcares.us19.list-manage.com/subscribe/post"
+            method="POST" autocomplete="off">
+            <input type="hidden" name="u" value="88baf6d86f9a8faebb5c5ec99">
+            <input type="hidden" name="id" value="774141a683">
+            <input type="email" name="MERGE0" id="MERGE0" placeholder="Enter your email address to subscribe!" tabindex="1"
+                class="newsletter-email" required>
+            <input type="submit" class="newsletter-submit" name="submit" value="OK">
+        </form>
     </div>
     </div>
     <div class="div-2-under-top-1"></div>
@@ -119,11 +160,11 @@
     <div class="divider"></div>
     <div class="container">
         <section class="customer-logos slider">
-            <div class="slide"><img src="https://www.agoda.com/wp-content/uploads/2017/10/Main_Agoda_Logo.png"></div>
+            <div class="slide"><img src="assets/img/agoda.png"></div>
             <div class="slide"><img src="assets/img/airbnb.svg"></div>
-            <div class="slide"><img src="https://tecoire.jp/images/zizaikelogo-300x191.jpg"></div>
-            <div class="slide"><img src="https://tecoire.jp/images/logo-asiayo.png"></div>
-            <div class="slide"><img src="https://upload.wikimedia.org/wikipedia/en/b/be/Booking.com_logo.svg"></div>
+            <div class="slide"><img src="assets/img/ziz.png"></div>
+            <div class="slide"><img src="assets/img/asiayo.png"></div>
+            <div class="slide"><img src="assets/img/booking.png"></div>
             <div class="slide"><img src="//pic.c-ctrip.com/common/c_logo2013.png"></div>
         </section>
     </div>
@@ -184,31 +225,31 @@
             <div class="row">
                 <div class="col-md-4 border">
                     <p id="boldtext-number-1" class="center count" data-aos="zoom-out-up" data-aos-duration="1000"
-                        data-aos-delay="100" data-aos-easing="ease-in-out" style="margin-bottom:0;">200
+                        data-aos-delay="100" data-aos-easing="ease-in-out" data-aos-once="true" style="margin-bottom:0;">200
                         <br>
                     </p>
                     <p class="center" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-delay="300"
-                        data-aos-easing="ease-in-out">Messages sent
+                        data-aos-easing="ease-in-out" data-aos-once="true">Messages sent
                         <br>
                     </p>
                 </div>
                 <div class="col-md-4 border">
                     <p id="boldtext-number-2" class="center count" data-aos="zoom-out-up" data-aos-duration="1000"
-                        data-aos-delay="500" data-aos-easing="ease-in-out" style="margin-bottom:0px;">110
+                        data-aos-delay="500" data-aos-easing="ease-in-out" data-aos-once="true" style="margin-bottom:0px;">110
                         <br>
                     </p>
                     <p class="center" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-delay="800"
-                        data-aos-easing="ease-in-out">Satisfied Guests
+                        data-aos-easing="ease-in-out" data-aos-once="true">Satisfied Guests
                         <br>
                     </p>
                 </div>
                 <div class="col-md-4 border">
                     <p id="boldtext-number-3" class="center count" data-aos="zoom-out-up" data-aos-duration="1000"
-                        data-aos-delay="1100" data-aos-easing="ease-in-out" style="margin-bottom:0px;">94
+                        data-aos-delay="1100" data-aos-easing="ease-in-out" data-aos-once="true" style="margin-bottom:0px;">94
                         <br>
                     </p>
                     <p class="center" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-delay="1300"
-                        data-aos-easing="ease-in-out">5-star ratings
+                        data-aos-easing="ease-in-out" data-aos-once="true">5-star ratings
                         <br>
                     </p>
                 </div>
@@ -326,7 +367,7 @@
                         <span class="input-group-btn">
                             <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
                         </span>
-                    </div><!-- /input-group -->
+                    </div>
                 </p>
             </div>
         </div>

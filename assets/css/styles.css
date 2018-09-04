@@ -667,10 +667,10 @@ h2{
 	font-family: 'Karla';
 	font-weight: 400;
 	font-size: 20px;
-	color: white;
+	color: black;
+	text-shadow: none !important;
 	line-height: 30px;
 	bottom: 40%;
-	text-shadow: 1px 1px 5px black;
 	top: 30%;
 }
 
@@ -693,7 +693,7 @@ h2{
 	font-family: 'Karla';
 	font-weight: 700;
 	font-size: 20px;
-	color: white;
+	color: black;
 	line-height: 30px;
 	margin-top: 40px;
 }
@@ -721,7 +721,7 @@ h2{
 }
 
 .testimonial-style .carousel-control {
-	color: white;
+	color: black;
 }
 
 .testimonial-style .carousel-control:hover {

@@ -25,6 +25,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha384-FzT3vTVGXqf7wRfy8k4BiyzvbNfeYjK+frTVqZeNDFl8woCbF0CYG6g2fMEFFo/i"
         crossorigin="anonymous"></script>
     <script src="/assets/jscript/count-animation.js"></script>
+    <script src="/assets/jscript/smoothscroll.js"></script>
     <script type="text/javascript">
         $(function () {
             $(document).scroll(function () {
@@ -85,14 +86,15 @@
             </h1>
             <nav id="navbar">
                 <ul class="leftMenu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
             </nav>
         </header>
     </div>
+    <div id="home"></div>
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
@@ -125,6 +127,7 @@
         </form>
     </div>
     </div>
+    <div id="services"></div>
     <div class="div-2-under-top-1"></div>
     <p id="paragraph-below" style="margin:19px;margin-bottom:50px;margin-left:0px;font-weight:bold;margin-top:0px;">Everything
         you need doing,
@@ -169,6 +172,7 @@
             <div class="slide"><img src="assets/img/booking.png"></div>
             <div class="slide"><img src="//pic.c-ctrip.com/common/c_logo2013.png"></div>
         </section>
+        <div id="about"></div>
     </div>
     <div class="divider"></div>
     <div id="test" class="features-clean" style="background-color:rgb(238,244,247);margin-bottom:35px;">

@@ -31,8 +31,8 @@ a:hover a:focus a:active {
 
 nav.navbar.navbar-default {
 	margin: 0 !important;
+	float: right;
 }
-
 
 #brandimage {
 	position: absolute;
@@ -57,7 +57,8 @@ header.transparant {
 }
 
 header h1 {
-	text-align: center;
+	text-align: left;
+	padding-left: 130px;
 }
 
 h1 {
@@ -66,7 +67,7 @@ h1 {
 }
 
 header nav ul.leftMenu {
-	left: 50px;
+	right: 120px;
 }
 
 header nav ul {
@@ -94,6 +95,12 @@ header nav ul li a {
 	padding: 3px 9px;
 }
 
+#star::before {
+	display: none;
+	content: '\f005';
+	font-family: "Font Awesome 5 Brands";
+}
+
 header.scroll {
 	box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, .2);
 }
@@ -111,19 +118,19 @@ img {
 }
 .navbar-brand-centered {
 	display: flex;
-	justify-content: center;
-	align-content: center;
+	justify-content: left;
+	align-content: left;
 	position: absolute;
-	left: 43%;
+	left: 5%;
 	display: block;
 	width: 160px;
-	text-align: center;
+	text-align: left;
 	background-color: transparent;
 	margin-bottom: 0px !important;
 }
 .navbar>.container .navbar-brand-centered, 
 .navbar>.container-fluid .navbar-brand-centered {
-	margin-left: 80px;
+	margin-left: 5x;
 }
 
   
@@ -131,11 +138,12 @@ img {
 .centerlogo {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: left;
 	margin: auto;
+	margin-bottom: -5% !important;
 	padding-top: 10%;
-	padding-bottom: 0 !important;
 	width: 40%;
+	height: auto;
 }
 
 p {
@@ -154,11 +162,12 @@ p {
 }
 
 .top-bg {
-	background-image: url('../img/top-bg.jpg');
+	background-image: url('../img/apartment-chair-contemporary-509922.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
 	background-color: black;
-	height: 70vh;
+	height: 100vh;
 	width: auto;
 }
 
@@ -180,7 +189,7 @@ p {
 
 #top-banner-text-1 {
 	color: black;
-	font-size: 22px;
+	font-size: 28px;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
@@ -190,7 +199,7 @@ p {
 
 strong {
 	font-weight: bold !important;
-	font-size: 22px;
+	font-size: 32px;
 }
 
 #top-banner-text {
@@ -272,7 +281,7 @@ strong {
 	display: block;
 	position: relative;
 	max-width: 700px;
-	margin: 60px auto;
+	margin: 20px auto;
 	box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, .2);
   }
   
@@ -340,7 +349,6 @@ strong {
 	text-align: center;
 	font-size: 35px;
 	font-family: 'Karla';
-	padding-top: 20px;
 }
 
 @media screen and (max-width: 580px) {
@@ -351,7 +359,7 @@ strong {
 
 .div-2-under-top-1 {
 	height: auto;
-	margin-top: 25rem;
+	padding-top: 10vh;
 }
 
 .center {

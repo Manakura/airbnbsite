@@ -606,8 +606,12 @@ h2{
 	}
 }
 
+#comment {
+	text-align: center;
+}
+
 .features-clean .item .icon {
-	font-size: 40px;
+	font-size: 18px;
 	color: white !important;
 	float: left;
 	margin-left: -65px;
@@ -625,6 +629,7 @@ h2{
 .description {
 	color: white !important;
 	text-shadow: 1px 1px 5px black;
+	font-size: 15px;
 }
 
 .text-center {
